@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
 
     },
 
+    
     configTimeArea: {
         display: "flex",
         paddingHorizontal: 5
