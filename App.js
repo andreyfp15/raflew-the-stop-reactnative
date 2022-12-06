@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import Main from './src/ui/main';
+import Config from './src/ui/config';
 
-export default function App() {
+
+const Stack = createStackNavigator();
+
+function Navigation() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Stack.Navigator screenOptions={{headerShown: false, cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS}}>
+      <Stack.Screen name="Main" component={Main} />
+      <Stack.Screen name="Config" component={Config} />
+    </Stack.Navigator>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Navigation></Navigation>
+    </NavigationContainer>
+  );
+}
