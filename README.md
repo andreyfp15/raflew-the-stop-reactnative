@@ -4,6 +4,9 @@
 
 This project's main function is to study the react-native platform. The project consists of creating a way to randomly draw letters for use in the game "The stop or Town, Country, River". The system should save used letters, allow configuring which letters to use in the draw and change the duration of the letter draw time.
 
+## Layout mobile
+![Mobile 1]([https://github.com/acenelio/assets/raw/main/sds1/mobile1.png](https://github.com/andreyfp15/raflew-the-stop-reactnative/blob/main/assets/img-github/raffle001.PNG)) ![Mobile 2]([https://github.com/acenelio/assets/raw/main/sds1/mobile2.png](https://github.com/andreyfp15/raflew-the-stop-reactnative/blob/main/assets/img-github/raffle002.PNG))
+
 # Technologies
 -React-native
 -expo
